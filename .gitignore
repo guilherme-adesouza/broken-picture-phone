@@ -8,6 +8,11 @@ node_modules/
 .pnp/
 .pnp.js/
 
+# compiled output
+dist/
+tmp/
+out-tsc/
+
 # testing
 coverage/
 

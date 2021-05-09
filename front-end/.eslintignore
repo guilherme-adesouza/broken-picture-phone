@@ -1,0 +1,8 @@
+node_modules
+.vscode
+coverage
+public
+*.json
+dist
+*.svg
+*.css

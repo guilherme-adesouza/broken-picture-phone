@@ -1,5 +1,8 @@
-.LoginForm {
+#LoginFormWrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+
+#LoginFormAddContent {
+    background-color: white;
 }

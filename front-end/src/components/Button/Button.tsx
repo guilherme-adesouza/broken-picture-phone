@@ -6,7 +6,7 @@ export type ButtonProps = {
     onClick: () => void,
 }
 
-export const Button: React.FC<ButtonProps> = ({description, onClick}) => {
+const Button: React.FC<ButtonProps> = ({description, onClick}) => {
     return (
         <button className="Button" onClick={onClick}>{description}</button>
     )

@@ -1,23 +1,26 @@
 import './LoginForm.css';
 import React from 'react';
-import Input from "../Input/Input";
-import Button from "../Button/Button";
-import Logo from "../Logo/Logo";
+import {useHistory} from "react-router-dom";
+
+import Button from "components/Button/Button";
+import Logo from "components/Logo/Logo";
+import Input from "components/Input/Input";
 
 export type LoginFormProps = {
 }
 
-export const LoginForm: React.FC<LoginFormProps> = () => {
+const LoginForm: React.FC<LoginFormProps> = () => {
+    let history = useHistory();
+
+    const loginAttempt = () => {
+        history.push("/lobby");
+    }
+
     return (
-        <div id="LoginFormWrapper">
-            <div id="LoginForm">
-                <Logo width="9em"/>
-                <Input type="text" />
-                <Button onClick={() => alert('Login')} description="JOGAR"/>
-            </div>
-            <div id="LoginFormAddContent">
-                HELLO
-            </div>
+        <div id="LoginForm">
+            <Logo width="9em"/>
+            <Input type="text" />
+            <Button onClick={loginAttempt} description="JOGAR"/>
         </div>
     )
 };

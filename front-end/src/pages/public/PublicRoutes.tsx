@@ -1,7 +1,8 @@
 import {Route} from "react-router-dom";
-import LoginPage from "./Login";
-import NotFoundPage from "./NotFound";
 import {PageRoute, TypeRouter} from "../PageRoutes";
+
+import LoginPage from "./Login/Login";
+import NotFoundPage from "./NotFound/NotFound";
 
 const routes: PageRoute[] = [
     {

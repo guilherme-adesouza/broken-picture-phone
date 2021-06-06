@@ -6,7 +6,7 @@ export type LogoProps = {
     width: string
 }
 
-export const Logo: React.FC<LogoProps> = ({width}) => {
+const Logo: React.FC<LogoProps> = ({width}) => {
     return (
         <img style={{width}} src={logo} alt="Broken Picture Phone Logo"/>
     )

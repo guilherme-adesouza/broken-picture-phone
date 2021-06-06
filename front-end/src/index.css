@@ -12,3 +12,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.SplitPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5em;
+  height: calc(100vh - 10em);
+}
+
+.SplitPage > * {
+  flex: 1 1;
+  padding: 5em;
+}
+
+.SplitPage .Banner {
+  height: 60%;
+}
